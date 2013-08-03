@@ -1,0 +1,22 @@
+#task_board{
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  #tasks{
+    text-align: center;
+    width: 600px;
+    min-height: 40px;
+
+    li{
+      width: 400px;
+      text-align: left;
+      margin-left: 50px;
+    }
+  };
+
+  #new_tasks{
+    text-align: center;
+    width: 400px;
+    padding-top: 30px;
+  };
+}
