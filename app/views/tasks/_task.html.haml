@@ -1,6 +1,12 @@
-%li
-  %b
-    = task.status ? "+" : "-"
-  = task.text
+%li{style: "float:left;", class: "update_task_form"}
+  = simple_form_for task, url: task_path(task), method: :put, remote: true, :html => { :class => 'form-inline task_form' } do |f|
+    = f.input_field :status, label: false, onclick: "submit_task();"
+    - if task.status
+      %span{class: "done"}
+        = task.text
+    - else
+      %span
+        = task.text
   %div{style: "float: right;"}
     = link_to "delete", task_path(task), method: :delete, remote: true
+%div{style: "clear: both;"}

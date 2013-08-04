@@ -1,5 +1,5 @@
 Tasker::Application.routes.draw do
-  resources :tasks
+  resources :tasks, only: [:create, :update, :destroy]
 
 
   get "home/index"

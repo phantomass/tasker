@@ -20,7 +20,6 @@ SimpleForm.setup do |config|
     # Calculates placeholders automatically from I18n
     # You can also pass a string as f.input :placeholder => "Placeholder"
     b.use :placeholder
-
     ## Optional extensions
     # They are disabled unless you pass `f.input EXTENSION_NAME => :lookup`
     # to the input. If so, they will retrieve the values from the model
@@ -44,7 +43,6 @@ SimpleForm.setup do |config|
     b.use :hint,  :wrap_with => { :tag => :span, :class => :hint }
     b.use :error, :wrap_with => { :tag => :span, :class => :error }
   end
-
   # The default wrapper to be used by the FormBuilder.
   config.default_wrapper = :default
 
